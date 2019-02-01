@@ -11,13 +11,26 @@ var connect= mysql.createConnection({
 });
 connection.connect(function(error){
     if(!!error){
-        document.write('ERROR');
+        console.log('ERROR');
     }
     else{
-        document.write('connected');
+        console.log('connected');
     }
 });
+
 app.get('/users', function( req, res){
+    res.send()
+})
+
+app.get('/users/id/post', function( req, res){
+    res.send()
+})
+
+app.get('/posts', function( req, res){
+    res.send()
+})
+
+app.get('/users/posts/id/users', function( req, res){
     res.send()
 })
 
